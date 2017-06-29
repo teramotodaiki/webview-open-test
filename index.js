@@ -14,7 +14,7 @@ try {
 
   localStorage.setItem('hogehoge', 'fugafuga');
 } catch (e) {
-  console.log('Error is occured', e);
+  console.log('Error is occured', e.message);
 } finally {
   console.log('END');
   document.write('END');
