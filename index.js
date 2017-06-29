@@ -1,6 +1,7 @@
 try {
   if ('localStorage' in window) {
-    console.info('localStorage exists', 'setItem' in window.localStorage);
+    document.write('localStorage exists');
+    console.info('setItem' in window.localStorage);
   } else {
     console.error('localStorage is not found');
   }
@@ -9,4 +10,5 @@ try {
   console.log('Error is occured');
 } finally {
   console.log('END');
+  document.write('END');
 }
